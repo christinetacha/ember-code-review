@@ -1,4 +1,10 @@
 <h2>Answers Only</h2>
 
+<ul>
+  {{#each model as |questions|}}
+    <li>Author:{{questions.author}}<br> Answer:{{questions.answer}}</li>
+  {{/each}}
+</ul>
+
 {{#link-to 'index'}}Home{{/link-to}}
 {{#link-to 'submit-question'}}Submit a question{{/link-to}}
