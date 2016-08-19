@@ -1,0 +1,13 @@
+<li>
+  {{question.author}}'s question: {{question.question}}
+  {{#if isInfoShowing}}
+    <p>{{question.additional}}</p>
+  {{else}}
+    <button {{action 'infoShow'}}>Additonal Info</button>
+  {{/if}}
+</li>
+
+
+<!-- {{#each model as |questions|}}
+  <li>Q:{{questions.question}}<br> A:{{questions.answer}}</li>
+{{/each}} -->

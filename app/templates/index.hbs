@@ -1,10 +1,10 @@
 <h2>Forum</h2>
 
-<p>Forum for asking any question you can think of</p>
+<p>Ask any question you can think of</p>
 
 <ul>
-  {{#each model as |questions|}}
-    <li>Q:{{questions.question}}<br> A:{{questions.answer}}</li>
+  {{#each model as |question|}}
+    {{question-tile question=question}}
   {{/each}}
 </ul>
 
