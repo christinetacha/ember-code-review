@@ -2,4 +2,10 @@
 
 <p>Forum for asking any question you can think of</p>
 
+<ul>
+  {{#each model as |questions|}}
+    <li>Q:{{questions.question}}<br> A:{{questions.answer}}</li>
+  {{/each}}
+</ul>
+
 {{#link-to 'submit-question'}}Click here to ask a question{{/link-to}}
