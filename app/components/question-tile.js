@@ -5,6 +5,9 @@ export default Ember.Component.extend({
   actions: {
     infoShow: function() {
       this.set('isInfoShowing', true);
+    },
+    infoHide: function() {
+      this.set('isInfoShowing', false);
     }
   }
 });

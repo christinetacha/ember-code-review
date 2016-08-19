@@ -1,7 +1,7 @@
 <li>
   {{question.author}}'s question: {{question.question}}
   {{#if isInfoShowing}}
-    <p>{{question.additional}}</p>
+    <p><img src={{question.additional}} {{action 'infoHide'}}></p>
   {{else}}
     <button {{action 'infoShow'}}>Additonal Info</button>
   {{/if}}
