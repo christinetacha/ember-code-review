@@ -1,12 +1,17 @@
-<h2>Forum</h2>
 
-<p>Ask any question you can think of</p>
+<div class="container">
+  <h2>Forum</h2>
 
-<ul>
-  {{#each model as |question|}}
-    {{question-tile question=question}}
-  {{/each}}
-</ul>
+  <p>Ask any question you can think of</p>
 
-{{#link-to 'submit-question'}}Click here to ask a question{{/link-to}}
-{{#link-to 'answers'}}Answers only{{/link-to}}
+  <ul>
+    {{#each model as |question|}}
+      {{question-tile question=question}}
+    {{/each}}
+  </ul>
+
+  {{new-answer save="save"}}
+
+  {{#link-to 'submit-question'}}Click here to ask a question{{/link-to}}
+  {{#link-to 'answers'}}Answers only{{/link-to}}
+</div>
