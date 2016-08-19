@@ -12,11 +12,19 @@ module.exports = function(environment) {
         // e.g. 'with-controller': true
       }
     },
+    firebase: {
+      apiKey: 'AIzaSyBVPOElZMNpA6-Ldsp-9Ql5nN65VDycxok',
+      authDomain: 'message-8f30e.firebaseapp.com',
+      databaseURL: 'https://message-8f30e.firebaseio.com',
+      storageBucket: '',
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
+    locationType: 'auto',
+    // ...
   };
 
   if (environment === 'development') {
